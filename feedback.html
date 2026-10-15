@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Voice | Feedback</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="feedback-container">
+
+
+        <!-- Header -->
+
+        <div class="feedback-header">
+
+            <span class="step-label">
+                STEP 3 OF 3
+            </span>
+
+            <h1>Share Your Experience 💬</h1>
+
+            <p>
+                Your honest feedback helps us
+                improve the learning experience.
+            </p>
+
+        </div>
+
+
+        <!-- Progress -->
+
+        <div class="progress-container">
+
+            <div class="progress-line"></div>
+
+
+            <div class="progress-step completed">
+
+                <span>✓</span>
+
+                <p>Course</p>
+
+            </div>
+
+
+            <div class="progress-step completed">
+
+                <span>✓</span>
+
+                <p>Details</p>
+
+            </div>
+
+
+            <div class="progress-step active">
+
+                <span>3</span>
+
+                <p>Feedback</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Selected course -->
+
+        <div class="feedback-course">
+
+            📚 <strong id="courseName">
+                Loading...
+            </strong>
+
+        </div>
+
+
+        <form id="feedbackForm">
+
+
+            <!-- Question 1 -->
+
+            <div class="question-card">
+
+                <h3>
+                    1. How would you rate the
+                    overall quality of this course?
+                </h3>
+
+                <p class="question-hint">
+                    Choose a rating from 1 to 5
+                </p>
+
+
+                <div class="star-rating">
+
+                    <input type="radio"
+                           name="overall"
+                           value="1"
+                           id="overall1">
+
+                    <label for="overall1">★</label>
+
+
+                    <input type="radio"
+                           name="overall"
+                           value="2"
+                           id="overall2">
+
+                    <label for="overall2">★</label>
+
+
+                    <input type="radio"
+                           name="overall"
+                           value="3"
+                           id="overall3">
+
+                    <label for="overall3">★</label>
+
+
+                    <input type="radio"
+                           name="overall"
+                           value="4"
+                           id="overall4">
+
+                    <label for="overall4">★</label>
+
+
+                    <input type="radio"
+                           name="overall"
+                           value="5"
+                           id="overall5">
+
+                    <label for="overall5">★</label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Question 2 -->
+
+            <div class="question-card">
+
+                <h3>
+                    2. How clearly were the concepts
+                    explained?
+                </h3>
+
+                <p class="question-hint">
+                    How easy was it to understand
+                    the topics?
+                </p>
+
+
+                <div class="emoji-options">
+
+                    <label>
+
+                        <input type="radio"
+                               name="clarity"
+                               value="1">
+
+                        <span>😕</span>
+
+                        <small>Very Poor</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="clarity"
+                               value="2">
+
+                        <span>😐</span>
+
+                        <small>Poor</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="clarity"
+                               value="3">
+
+                        <span>🙂</span>
+
+                        <small>Average</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="clarity"
+                               value="4">
+
+                        <span>😊</span>
+
+                        <small>Good</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="clarity"
+                               value="5">
+
+                        <span>🤩</span>
+
+                        <small>Excellent</small>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Question 3 -->
+
+            <div class="question-card">
+
+                <h3>
+                    3. How useful were the practical
+                    examples and activities?
+                </h3>
+
+
+                <div class="option-group">
+
+                    <label>
+
+                        <input type="radio"
+                               name="practical"
+                               value="1">
+
+                        <span>Not Useful</span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="practical"
+                               value="2">
+
+                        <span>Slightly Useful</span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="practical"
+                               value="3">
+
+                        <span>Moderately Useful</span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="practical"
+                               value="4">
+
+                        <span>Very Useful</span>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="practical"
+                               value="5">
+
+                        <span>Extremely Useful</span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Question 4 -->
+
+            <div class="question-card">
+
+                <h3>
+                    4. How effective was the teaching
+                    method?
+                </h3>
+
+                <div class="slider-container">
+
+                    <span>Not Effective</span>
+
+                    <input
+                        type="range"
+                        id="teaching"
+                        name="teaching"
+                        min="1"
+                        max="5"
+                        value="3">
+
+                    <span>Very Effective</span>
+
+                </div>
+
+                <div class="slider-value">
+
+                    Rating:
+                    <strong id="teachingValue">
+                        3
+                    </strong>
+                    / 5
+
+                </div>
+
+            </div>
+
+
+            <!-- Question 5 -->
+
+            <div class="question-card">
+
+                <h3>
+                    5. How confident do you feel about
+                    this subject now?
+                </h3>
+
+                <div class="confidence-options">
+
+                    <label>
+
+                        <input type="radio"
+                               name="confidence"
+                               value="1">
+
+                        <span>😟</span>
+
+                        <small>Low</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="confidence"
+                               value="2">
+
+                        <span>😐</span>
+
+                        <small>Somewhat Low</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="confidence"
+                               value="3">
+
+                        <span>🙂</span>
+
+                        <small>Moderate</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="confidence"
+                               value="4">
+
+                        <span>😃</span>
+
+                        <small>Confident</small>
+
+                    </label>
+
+
+                    <label>
+
+                        <input type="radio"
+                               name="confidence"
+                               value="5">
+
+                        <span>🤩</span>
+
+                        <small>Very Confident</small>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Question 6 -->
+
+            <div class="question-card">
+
+                <h3>
+                    6. What did you like most about
+                    this course?
+                </h3>
+
+                <p class="question-hint">
+                    You can also tell us what we
+                    could improve.
+                </p>
+
+
+                <textarea
+                    id="comments"
+                    placeholder="Share your thoughts...">
+                </textarea>
+
+
+                <div class="character-count">
+
+                    <span id="charCount">0</span>
+                    / 300
+
+                </div>
+
+            </div>
+
+
+            <!-- Message -->
+
+            <p id="feedbackMessage"></p>
+
+
+            <!-- Submit -->
+
+            <button
+                type="submit"
+                class="submit-feedback">
+
+                Submit Feedback 🎉
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+
+    <script src="js/feedback.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Voice | Personal Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="details-container">
+
+        <!-- Header -->
+
+        <div class="details-header">
+
+            <span class="step-label">
+                STEP 2 OF 3
+            </span>
+
+            <h1>Tell Us About Yourself 👋</h1>
+
+            <p>
+                Just a few details before we begin.
+            </p>
+
+        </div>
+
+
+        <!-- Progress -->
+
+        <div class="progress-container">
+
+            <div class="progress-line"></div>
+
+
+            <div class="progress-step completed">
+
+                <span>✓</span>
+
+                <p>Course</p>
+
+            </div>
+
+
+            <div class="progress-step active">
+
+                <span>2</span>
+
+                <p>Details</p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>3</span>
+
+                <p>Feedback</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Selected course -->
+
+        <div class="selected-course-box">
+
+            <span>📚</span>
+
+            <div>
+
+                <small>YOUR SELECTED COURSE</small>
+
+                <strong id="courseName">
+                    Loading...
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Details form -->
+
+        <form id="detailsForm">
+
+
+            <!-- Full Name -->
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                >
+
+            </div>
+
+
+            <!-- Student ID -->
+
+            <div class="form-group">
+
+                <label for="studentId">
+                    Student ID
+                </label>
+
+                <input
+                    type="text"
+                    id="studentId"
+                    placeholder="e.g. CSE2026001"
+                >
+
+            </div>
+            
+<!-- Email -->
+
+<div class="form-group">
+
+    <label for="email">
+        Email Address
+    </label>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter your email address"
+        required
+    >
+
+</div>
+
+
+
+            <!-- Branch -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="branch">
+                        Branch
+                    </label>
+
+                    <select id="branch">
+
+                        <option value="">
+                            Select Branch
+                        </option>
+
+                        <option value="CSE">
+                            Computer Science
+                        </option>
+
+                        <option value="IT">
+                            Information Technology
+                        </option>
+
+                        <option value="ENTC">
+                            Electronics & Telecommunication
+                        </option>
+
+                        <option value="Mechanical">
+                            Mechanical
+                        </option>
+
+                        <option value="Civil">
+                            Civil
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Year -->
+
+                <div class="form-group">
+
+                    <label for="year">
+                        Year
+                    </label>
+
+                    <select id="year">
+
+                        <option value="">
+                            Select Year
+                        </option>
+
+                        <option value="1st Year">
+                            1st Year
+                        </option>
+
+                        <option value="2nd Year">
+                            2nd Year
+                        </option>
+
+                        <option value="3rd Year">
+                            3rd Year
+                        </option>
+
+                        <option value="Final Year">
+                            Final Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Semester -->
+
+            <div class="form-group">
+
+                <label for="semester">
+                    Semester
+                </label>
+
+                <select id="semester">
+
+                    <option value="">
+                        Select Semester
+                    </option>
+
+                    <option value="1">
+                        Semester 1
+                    </option>
+
+                    <option value="2">
+                        Semester 2
+                    </option>
+
+                    <option value="3">
+                        Semester 3
+                    </option>
+
+                    <option value="4">
+                        Semester 4
+                    </option>
+
+                    <option value="5">
+                        Semester 5
+                    </option>
+
+                    <option value="6">
+                        Semester 6
+                    </option>
+
+                    <option value="7">
+                        Semester 7
+                    </option>
+
+                    <option value="8">
+                        Semester 8
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Message -->
+
+            <p id="detailsMessage"></p>
+
+
+            <!-- Buttons -->
+
+            <div class="details-buttons">
+
+                <button
+                    type="button"
+                    id="backButton"
+                    class="back-button">
+
+                    ← Back
+
+                </button>
+
+
+                <button
+                    type="submit"
+                    class="continue-button">
+
+                    Continue →
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <script src="js/details.js"></script>
+
+</body>
+
+</html>

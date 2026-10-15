@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Voice | Select Course</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="course-container">
+
+        <!-- Header -->
+
+        <div class="course-header">
+
+            <span class="step-label">
+                STEP 1 OF 3
+            </span>
+
+            <h1>Choose Your Course 🎓</h1>
+
+            <p>
+                Select the course you would like to
+                give feedback about.
+            </p>
+
+        </div>
+
+
+        <!-- Progress -->
+
+        <div class="progress-container">
+
+            <div class="progress-line"></div>
+
+            <div class="progress-step active">
+                <span>1</span>
+                <p>Course</p>
+            </div>
+
+            <div class="progress-step">
+                <span>2</span>
+                <p>Details</p>
+            </div>
+
+            <div class="progress-step">
+                <span>3</span>
+                <p>Feedback</p>
+            </div>
+
+        </div>
+
+
+        <!-- Course Cards -->
+
+        <div class="course-grid">
+
+            <div class="course-card"
+                 data-course="Java">
+
+                <div class="course-icon">
+                    ☕
+                </div>
+
+                <h3>Java</h3>
+
+                <p>
+                    Object-oriented programming
+                    and application development.
+                </p>
+
+            </div>
+
+
+            <div class="course-card"
+                 data-course="Web Development">
+
+                <div class="course-icon">
+                    💻
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    HTML, CSS, JavaScript and
+                    frontend development.
+                </p>
+
+            </div>
+
+
+            <div class="course-card"
+                 data-course="DBMS">
+
+                <div class="course-icon">
+                    🗄️
+                </div>
+
+                <h3>DBMS</h3>
+
+                <p>
+                    Database concepts, SQL and
+                    data management.
+                </p>
+
+            </div>
+
+
+            <div class="course-card"
+                 data-course="Python">
+
+                <div class="course-icon">
+                    🐍
+                </div>
+
+                <h3>Python</h3>
+
+                <p>
+                    Programming fundamentals and
+                    Python development.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Selected course -->
+
+        <p id="selectedCourse"></p>
+
+
+        <!-- Continue button -->
+
+        <button id="continueButton"
+                class="continue-button">
+
+            Continue →
+
+        </button>
+
+    </div>
+
+
+    <script src="js/course.js"></script>
+
+</body>
+
+</html>
